@@ -302,6 +302,9 @@ main {
 .language {
   --card-color: #10b981;
 }
+.antonyms {
+  --card-color: #f43f5e;
+}
 .empty {
   display: none;
   text-align: center;
