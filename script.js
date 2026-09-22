@@ -23,6 +23,14 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
+function updateProjectCount() {
+  const cards = [...document.querySelectorAll(".card")];
+  const visible = cards.filter((card) => card.style.display !== "none").length;
+
+  document.getElementById("projectCount").textContent =
+    `${visible} ${visible === 1 ? "Projekt" : "Projekte"}`;
+}
+
 function searchProjects() {
   const query = document.getElementById("search").value.toLowerCase().trim();
   const cards = document.querySelectorAll(".card");
@@ -36,9 +44,9 @@ function searchProjects() {
 
   document.getElementById("empty").style.display =
     visible === 0 ? "block" : "none";
-  document.getElementById("projectCount").textContent =
-    `${visible} ${visible === 1 ? "Projekt" : "Projekte"}`;
+  updateProjectCount();
 }
 
+updateProjectCount();
 document.getElementById("themeButton").addEventListener("click", toggleTheme);
 document.getElementById("search").addEventListener("input", searchProjects);
