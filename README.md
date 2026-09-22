@@ -7,17 +7,18 @@ Build-Schritt benötigt wird.
 
 ## Enthaltene Projekte
 
-| Projekt                    | Bereich     | Link                                                                               |
-| -------------------------- | ----------- | ---------------------------------------------------------------------------------- |
-| Conjugation Test           | Französisch | [Öffnen](https://die-agueamaghts.github.io/Conjugation-Test/)                      |
-| French Conjugaison Trainer | Französisch | [Öffnen](https://die-agueamaghts.github.io/FrenchConjugaisonTrainer/)              |
-| FrenchFlow                 | Französisch | [Öffnen](https://die-agueamaghts.github.io/FrenchFlow/)                            |
-| Français 4                 | Französisch | [Öffnen](https://die-agueamaghts.github.io/francais_4/index.html)                  |
-| Français 5                 | Französisch | [Öffnen](https://die-agueamaghts.github.io/francais_5/index.html)                  |
-| Eloquenz Trainer           | Sprache     | [Öffnen](https://die-agueamaghts.github.io/Eloquenz-Trainer/Eloquenz_Trainer.html) |
-| Grundrechnungen            | Mathematik  | [Öffnen](https://die-agueamaghts.github.io/grundrechnungen/)                       |
-| Sprachtrainer              | Sprache     | [Öffnen](https://die-agueamaghts.github.io/sprachtrainer/)                         |
-| Antonyms                   | Sprache     | [Öffnen](https://die-agueamaghts.github.io/antonyms/)                              |
+| Projekt                       | Bereich     | Link                                                                               |
+| ----------------------------- | ----------- | ---------------------------------------------------------------------------------- |
+| Conjugation Test              | Französisch | [Öffnen](https://die-agueamaghts.github.io/Conjugation-Test/)                      |
+| French Conjugaison Trainer    | Französisch | [Öffnen](https://die-agueamaghts.github.io/FrenchConjugaisonTrainer/)              |
+| FrenchFlow                    | Französisch | [Öffnen](https://die-agueamaghts.github.io/FrenchFlow/)                            |
+| Français 4                    | Französisch | [Öffnen](https://die-agueamaghts.github.io/francais_4/index.html)                  |
+| Français 5                    | Französisch | [Öffnen](https://die-agueamaghts.github.io/francais_5/index.html)                  |
+| Eloquenz Trainer              | Sprache     | [Öffnen](https://die-agueamaghts.github.io/Eloquenz-Trainer/Eloquenz_Trainer.html) |
+| Grundrechnungen               | Mathematik  | [Öffnen](https://die-agueamaghts.github.io/grundrechnungen/)                       |
+| Sprachtrainer                 | Sprache     | [Öffnen](https://die-agueamaghts.github.io/sprachtrainer/)                         |
+| Antonyms                      | Sprache     | [Öffnen](https://die-agueamaghts.github.io/antonyms/)                              |
+| Islamische Rechtslehre (Fiqh) | Religion    | [Öffnen](https://die-agueamaghts.github.io/fiqh/index.html)                        |
 
 ## Funktionen
 

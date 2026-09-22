@@ -524,6 +524,10 @@ body.dark .tag {
   --card-color: #f43f5e;
 }
 
+.fiqh {
+  --card-color: #0f766e;
+}
+
 .empty {
   display: none;
   text-align: center;
