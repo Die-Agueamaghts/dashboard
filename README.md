@@ -1,40 +1,51 @@
-# ✦ Learning Hub
+# Learning Hub
 
-Eine moderne und übersichtliche **Startseite für meine Lernprogramme**.
+Der Learning Hub ist eine zentrale, responsive Startseite für Lern- und
+Trainingsprogramme. Die einzelnen Angebote öffnen sich direkt in einem neuen
+Tab und sind dadurch schnell erreichbar, ohne dass ein Framework oder ein
+Build-Schritt benötigt wird.
 
-Der Learning Hub dient als zentrale Navigation für verschiedene selbst entwickelte Lern- und Übungsprogramme. Alle Anwendungen können von einer einzigen Startseite aus geöffnet werden.
+## Enthaltene Projekte
 
----
+| Projekt                    | Bereich     | Link                                                                               |
+| -------------------------- | ----------- | ---------------------------------------------------------------------------------- |
+| Conjugation Test           | Französisch | [Öffnen](https://die-agueamaghts.github.io/Conjugation-Test/)                      |
+| French Conjugaison Trainer | Französisch | [Öffnen](https://die-agueamaghts.github.io/FrenchConjugaisonTrainer/)              |
+| FrenchFlow                 | Französisch | [Öffnen](https://die-agueamaghts.github.io/FrenchFlow/)                            |
+| Français 4                 | Französisch | [Öffnen](https://die-agueamaghts.github.io/francais_4/index.html)                  |
+| Français 5                 | Französisch | [Öffnen](https://die-agueamaghts.github.io/francais_5/index.html)                  |
+| Eloquenz Trainer           | Sprache     | [Öffnen](https://die-agueamaghts.github.io/Eloquenz-Trainer/Eloquenz_Trainer.html) |
+| Grundrechnungen            | Mathematik  | [Öffnen](https://die-agueamaghts.github.io/grundrechnungen/)                       |
+| Sprachtrainer              | Sprache     | [Öffnen](https://die-agueamaghts.github.io/sprachtrainer/)                         |
+| Antonyms                   | Sprache     | [Öffnen](https://die-agueamaghts.github.io/antonyms/)                              |
 
-## 🚀 Projekte
+## Funktionen
 
-| Projekt | Beschreibung | Bereich |
-|---|---|---|
-| 🇫🇷 **Conjugation Test** | Französische Verben und Konjugationen trainieren | Französisch |
-| 🌊 **FrenchFlow** | Lernumgebung für Französisch | Französisch |
-| 🎤 **Eloquenz Trainer** | Ausdruck, Wortschatz und sprachliche Sicherheit trainieren | Sprache |
-| ➗ **Grundrechnungen** | Die vier Grundrechenarten üben | Mathematik |
+- Live-Uhrzeit in der Navigation
+- Projektsuche mit dynamischer Trefferanzahl
+- Light Mode und Dark Mode
+- Aurora- und Sunset-Farbpalette
+- Gespeicherte Einstellungen via `localStorage`
+- Responsive Layout für Desktop, Tablet und kleine Smartphones
+- Tastaturfokus und semantische HTML-Struktur
 
----
+## Lokal starten
 
-## ✨ Funktionen
+Da es sich um eine statische Seite handelt, reicht ein lokaler Webserver oder
+das direkte Öffnen von `index.html`. Für die Entwicklung mit VS Code kann die
+Datei beispielsweise über eine Live-Server-Erweiterung geöffnet werden.
 
-- 🎨 Modernes und minimalistisches Design
-- 🌙 Dark Mode
-- ☀️ Light Mode
-- 🔎 Projektsuche
-- 🕐 Live-Uhrzeit
-- 📱 Responsive Design für Handy, Tablet und PC
-- 🔗 Direkter Zugriff auf alle Lernprogramme
-- ➕ Einfach erweiterbar für zukünftige Projekte
-- 💾 Dark-Mode-Einstellung wird gespeichert
-
----
-
-## 📁 Projektstruktur
+## Projektstruktur
 
 ```text
-Learning-Hub/
-│
-├── index.html
-└── README.md
+dashboard/
+├── index.html   # Seitenstruktur und Projektlinks
+├── styles.css   # Layout, Themes und responsive Darstellung
+├── script.js    # Uhr, Suche und gespeicherte Einstellungen
+└── README.md    # Projektdokumentation
+```
+
+## Veröffentlichen
+
+Das Repository kann direkt über GitHub Pages veröffentlicht werden. Als
+Quelle genügt der `main`-Branch mit `index.html` im Projektstamm.

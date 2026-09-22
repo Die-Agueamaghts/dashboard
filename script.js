@@ -7,9 +7,19 @@ function toggleTheme() {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
+function togglePalette() {
+  document.body.classList.toggle("sunset");
+  const isSunset = document.body.classList.contains("sunset");
+  localStorage.setItem("palette", isSunset ? "sunset" : "aurora");
+}
+
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   document.getElementById("themeButton").textContent = "☀";
+}
+
+if (localStorage.getItem("palette") === "sunset") {
+  document.body.classList.add("sunset");
 }
 
 function updateClock() {
@@ -49,4 +59,7 @@ function searchProjects() {
 
 updateProjectCount();
 document.getElementById("themeButton").addEventListener("click", toggleTheme);
+document
+  .getElementById("paletteButton")
+  .addEventListener("click", togglePalette);
 document.getElementById("search").addEventListener("input", searchProjects);
