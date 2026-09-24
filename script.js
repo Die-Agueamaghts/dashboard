@@ -33,6 +33,8 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
+let currentFilter = "all";
+
 function updateProjectCount() {
   const cards = [...document.querySelectorAll(".card")];
   const visible = cards.filter((card) => card.style.display !== "none").length;
@@ -47,7 +49,11 @@ function searchProjects() {
   let visible = 0;
 
   cards.forEach((card) => {
-    const matches = card.innerText.toLowerCase().includes(query);
+    const categoryMatch =
+      currentFilter === "all" || card.dataset.category === currentFilter;
+    const matches =
+      categoryMatch && card.innerText.toLowerCase().includes(query);
+
     card.style.display = matches ? "" : "none";
     if (matches) visible++;
   });
@@ -57,9 +63,22 @@ function searchProjects() {
   updateProjectCount();
 }
 
+function setFilter(filterName) {
+  currentFilter = filterName;
+
+  document.querySelectorAll(".filter-btn").forEach((button) => {
+    button.classList.toggle("active", button.dataset.filter === filterName);
+  });
+
+  searchProjects();
+}
+
 updateProjectCount();
 document.getElementById("themeButton").addEventListener("click", toggleTheme);
 document
   .getElementById("paletteButton")
   .addEventListener("click", togglePalette);
 document.getElementById("search").addEventListener("input", searchProjects);
+document.querySelectorAll(".filter-btn").forEach((button) => {
+  button.addEventListener("click", () => setFilter(button.dataset.filter));
+});

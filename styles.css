@@ -343,6 +343,45 @@ main {
   padding: 0 25px 80px;
 }
 
+.filter-bar {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  padding: 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(79, 70, 229, 0.38);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-color: transparent;
+  color: white;
+  box-shadow: var(--shadow-soft);
+}
+
 .section-title {
   justify-content: space-between;
   margin: 30px 0 20px;
@@ -412,6 +451,19 @@ body.dark .card {
   transform: translateY(-7px);
   box-shadow: 0 28px 55px rgba(15, 23, 42, 0.12);
   border-color: var(--card-color);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.88),
+    rgba(255, 255, 255, 0.7)
+  );
+}
+
+body.dark .card:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 24, 39, 0.9),
+    rgba(15, 23, 42, 0.78)
+  );
 }
 
 .card:hover::before {
@@ -506,6 +558,16 @@ body.dark .tag {
 
 .francais-5 {
   --card-color: #0ea5e9;
+}
+
+.english-9 {
+  --card-color: #4f46e5;
+  box-shadow: 0 22px 45px rgba(79, 70, 229, 0.14);
+}
+
+.english-10 {
+  --card-color: #7c3aed;
+  box-shadow: 0 22px 45px rgba(124, 58, 237, 0.14);
 }
 
 .eloquence {

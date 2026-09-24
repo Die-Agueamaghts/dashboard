@@ -53,6 +53,7 @@
 
       <div class="hero-meta" aria-label="Lernbereiche">
         <span class="meta-pill">Französisch</span>
+        <span class="meta-pill">Englisch</span>
         <span class="meta-pill">Mathematik</span>
         <span class="meta-pill">Sprache</span>
         <span class="meta-pill">Religion</span>
@@ -62,13 +63,13 @@
     <div class="stats-grid" aria-label="Übersicht">
       <div class="stat-card">
         <span class="stat-label">Programme</span>
-        <strong>10</strong>
+        <strong>12</strong>
         <small>Aktive Lernangebote</small>
       </div>
       <div class="stat-card">
         <span class="stat-label">Bereiche</span>
-        <strong>4</strong>
-        <small>Sprachen, Mathe, Religion</small>
+        <strong>5</strong>
+        <small>Französisch, Englisch, Sprache, Mathe, Religion</small>
       </div>
       <div class="stat-card">
         <span class="stat-label">Zugang</span>
@@ -87,15 +88,37 @@
       />
     </div>
 
+    <div class="filter-bar" aria-label="Projektfilter">
+      <button class="filter-btn active" type="button" data-filter="all">
+        Alle
+      </button>
+      <button class="filter-btn" type="button" data-filter="französisch">
+        Französisch
+      </button>
+      <button class="filter-btn" type="button" data-filter="englisch">
+        Englisch
+      </button>
+      <button class="filter-btn" type="button" data-filter="sprache">
+        Sprache
+      </button>
+      <button class="filter-btn" type="button" data-filter="mathematik">
+        Mathematik
+      </button>
+      <button class="filter-btn" type="button" data-filter="religion">
+        Religion
+      </button>
+    </div>
+
     <main>
       <div class="section-title">
         <h2>Meine Projekte</h2>
-        <span id="projectCount">9 Programme</span>
+        <span id="projectCount">12 Projekte</span>
       </div>
 
       <div class="projects" id="projects">
         <a
           class="card french"
+          data-category="französisch"
           href="https://die-agueamaghts.github.io/Conjugation-Test/"
           target="_blank"
           rel="noopener noreferrer"
@@ -114,6 +137,7 @@
 
         <a
           class="card french-conjugaison"
+          data-category="französisch"
           href="https://die-agueamaghts.github.io/FrenchConjugaisonTrainer/"
           target="_blank"
           rel="noopener noreferrer"
@@ -129,6 +153,7 @@
 
         <a
           class="card flow"
+          data-category="französisch"
           href="https://die-agueamaghts.github.io/FrenchFlow/"
           target="_blank"
           rel="noopener noreferrer"
@@ -144,6 +169,7 @@
 
         <a
           class="card francais-4"
+          data-category="französisch"
           href="https://die-agueamaghts.github.io/francais_4/index.html"
           target="_blank"
           rel="noopener noreferrer"
@@ -159,6 +185,7 @@
 
         <a
           class="card francais-5"
+          data-category="französisch"
           href="https://die-agueamaghts.github.io/francais_5/index.html"
           target="_blank"
           rel="noopener noreferrer"
@@ -173,7 +200,42 @@
         </a>
 
         <a
+          class="card english-9"
+          data-category="englisch"
+          href="https://die-agueamaghts.github.io/english_9/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="card-top">
+            <div class="icon">📚</div>
+            <div class="arrow">↗</div>
+          </div>
+          <h3>Englisch Vokabeltrainer – 9. Klasse</h3>
+          <p>Trainiere wichtige Vokabeln für die 9. Klasse Gymnasium Bayern.</p>
+          <span class="tag">Englisch</span>
+        </a>
+
+        <a
+          class="card english-10"
+          data-category="englisch"
+          href="https://die-agueamaghts.github.io/english_10/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="card-top">
+            <div class="icon">🧠</div>
+            <div class="arrow">↗</div>
+          </div>
+          <h3>Englisch Vokabeltrainer – 10. Klasse</h3>
+          <p>
+            Trainiere wichtige Vokabeln für die 10. Klasse Gymnasium Bayern.
+          </p>
+          <span class="tag">Englisch</span>
+        </a>
+
+        <a
           class="card eloquence"
+          data-category="sprache"
           href="https://die-agueamaghts.github.io/Eloquenz-Trainer/Eloquenz_Trainer.html"
           target="_blank"
           rel="noopener noreferrer"
@@ -191,6 +253,7 @@
 
         <a
           class="card math"
+          data-category="mathematik"
           href="https://die-agueamaghts.github.io/grundrechnungen/"
           target="_blank"
           rel="noopener noreferrer"
@@ -208,6 +271,7 @@
 
         <a
           class="card language"
+          data-category="sprache"
           href="https://die-agueamaghts.github.io/sprachtrainer/"
           target="_blank"
           rel="noopener noreferrer"
@@ -225,6 +289,7 @@
 
         <a
           class="card antonyms"
+          data-category="sprache"
           href="https://die-agueamaghts.github.io/antonyms/"
           target="_blank"
           rel="noopener noreferrer"
@@ -240,6 +305,7 @@
 
         <a
           class="card fiqh"
+          data-category="religion"
           href="https://die-agueamaghts.github.io/fiqh/index.html"
           target="_blank"
           rel="noopener noreferrer"
